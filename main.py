@@ -174,7 +174,7 @@ def train(opts):
                     cx = criterion_cx(vgg_img_B[l], vgg_fake_B[l])
                     loss_CX += cx * opts.lambda_cx
 
-            loss_G = loss_GAN + loss_pixel + loss_char_A + loss_CX + loss_attr
+            loss_G = loss_GAN + loss_pixel + loss_char_A + loss_CX + loss_attr      # This is where we need to do the weighted average
 
             optimizer_G.zero_grad()
             loss_G.backward(retain_graph=True)
