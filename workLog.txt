@@ -1,0 +1,44 @@
+date: 2022-10-21
+
+	Today I tried to import the csv data and see how they do it.
+The way it is done in Pytorch is you create a Dataset class, then pass that into the Dataloader class.
+Then you can enumerate through it.
+
+It was confusing me how their batch was returning a dict, but mine was just returning a single tensor.
+It turns out the __getitem__ is what does this.
+You create all the data vairbles in __init__, but the __getitem__ return is what your batch will actually be.
+
+So I'm basically right there when it comes to importing the csv data.
+The thing I need to do tomorrow is see what a single example is for them.
+Basically look over their __getitem__ code.
+Then I need to make sure we pull the same font from my csv that they pull for that batch.
+Let's do that tomorrow.
+
+
+date: 2022-10-20
+
+	They use MSE loss for real vs fake discriminator, weird.
+Also, they do a real prediction and a fake prediction during discriminator training then add their losses together?
+Even weirder, the font image is passed in with a "ground truth" image as well, and they are concatenated.
+It's also weird that they sum the real/fake prediction and the attribute prediction losses then get their gradients.
+
+It seems like you just throw everything into the loss tensor and call backward. Then it just works.
+
+**Edit after some reading**
+Yup adding all the losses is just how Pytorch works.
+It calculates the gradients with the addition as the last step so it works, just kinda weird.
+I think it does the weighted average when the NN forks, but I'm not sure on that.
+
+Tomorrow lets try and get my data imported in there!!
+
+
+date: 2022-10-18
+
+	The first steps are always the hardest haha.
+Today I am just going to get some basic stuff done.
+A crappy first product is better than no product at all right.
+Our first readability CNN will be a copy of AlexNet in PyTorch.
+I'm not going to bother to change anything except the class name.
+I'll store this in readabilityCNN.py in the cloned Attr2MDfont repo.
+
+After I get that done, I'm going to take a minute to brush up on the Adam optimizer and hyper parameter tuning.

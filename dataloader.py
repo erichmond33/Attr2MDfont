@@ -201,7 +201,7 @@ class ImageAttr(data.Dataset):
 
 
 def get_loader(image_dir, attr_path, image_size=256,
-               batch_size=16, dataset_name='explor_all', mode='train', num_workers=8,
+               batch_size=16, dataset_name='explor_all', mode='train', num_workers=0,
                binary=False, n_style=4,
                char_num=52, unsuper_num=968, train_num=120, val_num=28):
     """Build and return a data loader."""
