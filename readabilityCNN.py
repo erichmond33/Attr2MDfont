@@ -2,42 +2,37 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# A copy of AlexNet
+'''
+Some notes on how I changed this from the DiscriminatorWithClassifier
+
+This is a copy of the DiscriminatorWithClassifier except all of the attribute
+prediction code has been cut. Also, forward no longer takes an input of img_A
+and img_B becuase we only care about the readability of the generator's ouput
+not the ground truth font. 
+'''
 class readabilityCNN(nn.Module):
-    def __init__(self, num_classes: int = 1000) -> None:
+    def __init__(self, in_channel=3):
         super(readabilityCNN, self).__init__()
 
-        self.features = nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size=11, stride=4, padding=2),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(kernel_size=3, stride=2),
-            nn.Conv2d(64, 192, kernel_size=5, padding=2),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(kernel_size=3, stride=2),
-            nn.Conv2d(192, 384, kernel_size=3, padding=1),
-            nn.ReLU(inplace=True),
-            nn.Conv2d(384, 256, kernel_size=3, padding=1),
-            nn.ReLU(inplace=True),
-            nn.Conv2d(256, 256, kernel_size=3, padding=1),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(kernel_size=3, stride=2),
-        )
+        def discriminator_block(in_filters, out_filters, normalize=True):
+            layers = [nn.Conv2d(in_filters, out_filters, 4, 2, 1)]
+            if normalize:
+                layers.append(nn.InstanceNorm2d(out_filters))
+            layers.append(nn.LeakyReLU(0.1))
 
-        self.avgpool = nn.AdaptiveAvgPool2d((6, 6))
-        
-        self.classifier = nn.Sequential(
-            nn.Dropout(),
-            nn.Linear(256 * 6 * 6, 4096),
-            nn.ReLU(inplace=True),
-            nn.Dropout(),
-            nn.Linear(4096, 4096),
-            nn.ReLU(inplace=True),
-            nn.Linear(4096, num_classes),
-        )
+            return layers
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        x = self.features(x)
-        x = self.avgpool(x)
-        x = torch.flatten(x, 1)
-        x = self.classifier(x)
-        return x
+        self.inputAndHiddenLayers = nn.Sequential(
+            *discriminator_block(in_channel*2, 64, normalize=False),
+            *discriminator_block(64, 128),
+            *discriminator_block(128, 256),
+            *discriminator_block(256, 256),
+            nn.ZeroPad2d((1, 0, 1, 0)),
+        )
+        self.outputLayer = nn.Conv2d(256, 1, 4, padding=1, bias=False)
+
+    def forward(self, generatorOutput):
+        hiddenLayersOutput = self.inputAndHiddenLayers(generatorOutput)
+        readabilityScore = self.outputLayer(hiddenLayersOutput)
+
+        return readabilityScore

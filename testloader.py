@@ -28,15 +28,19 @@ test_dataloader = get_loader(image_dir, attribute_path,
                                 mode='test', binary=False)
 
 num_epochs = 1
+counter = 0
 for epoch in range(num_epochs):
 
-    for batch_idx, x in enumerate(test_dataloader):
-        if batch_idx >= 3:
-            break
+    for batch_idx, batch in enumerate(train_dataloader):
+        counter += 1
+        # if batch_idx >= 3:
+        #     break
         # print(" Batch index:", batch_idx)
         # print(" | Batch size:", x.shape[0])
         # print(" | x shape:", x.shape)
         # print(" | y shape:", y.shape)    
-        print(x.keys())        
-
+        # print(x.keys())
+        img_A = batch['img_A']
+        print(img_A.shape)      
+print (counter)
 # print("Labels from current batch:", x)
