@@ -14,17 +14,18 @@ class MyDataset(Dataset):
         self.transform = transform
 
         # based on DataFrame columns
-        self.font_names = df["fontId"]
-        self.averages = df["average"]
-        self.more = df["average"]
-        self.mores = df["average"]
+        self.font_names = df["fontName"]
+        self.averages = df["readabilityScore"]
+
+        self.font2readability = {}
+
+        for i, name in enumerate(df["fontName"]):
+            self.font2readability[name] = df["readabilityScore"][i]
 
     def __getitem__(self, index):
 
         averages = self.averages[index]
-        more = self.more[index]
-        mores = self.mores[index]
-        return {"a" : averages, "m" : more, "m2" : mores}
+        return {"a" : averages}
 
     def __len__(self):
         return self.averages.shape[0]
