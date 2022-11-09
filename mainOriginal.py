@@ -7,8 +7,8 @@ from torch import nn
 from torchvision.utils import save_image
 
 from readabilityCNN.dataloader import get_loader
-from model import CXLoss, DiscriminatorWithClassifier, GeneratorStyle
-from options import get_parser
+from modelOriginal import CXLoss, DiscriminatorWithClassifier, GeneratorStyle
+from optionsOriginal import get_parser
 from vgg_cx import VGG19_CX
 
 

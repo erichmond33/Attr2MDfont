@@ -101,7 +101,7 @@ class ImageAttr(data.Dataset):
         print('Finished preprocessing the Image Attribute (Explo) dataset...')
 
     def __getitem__(self, index):
-        """Return one image and its corresponding attribute label."""
+        """Return one image and its corresponding readability score."""
 
         if self.mode == 'train':
             if index < len(self.super_train_dataset):

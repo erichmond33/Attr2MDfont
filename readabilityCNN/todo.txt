@@ -1,0 +1,2 @@
+Maybe rename all of the dataloader __getitem__ dictionary names.
+I.e. img_A, fontclass_A
