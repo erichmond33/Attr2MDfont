@@ -54,7 +54,6 @@ def train(opts):
     # Resume training
     if opts.init_epoch > 1:
         readabilityFile = os.path.join(checkpoint_dir, f"readabilityCNN_{opts.init_epoch}.pth")
-
         readabilityCNN.load_state_dict(torch.load(readabilityFile))
 
     prev_time = time.time()
@@ -129,6 +128,84 @@ def train(opts):
             readabilityFile = os.path.join(checkpoint_dir, f"readabilityCNN_{epoch}.pth")
 
             torch.save(readabilityCNN.state_dict(), readabilityFile)
+
+def test_one_epoch(opts, test_logfile, test_epoch,
+                   checkpoint_dir, results_dir,
+                   readabilityCNN, MSELoss,
+                   test_dataloader):
+    print(f"Testing epoch: {test_epoch}")
+
+    readabilityFile = os.path.join(checkpoint_dir, f"readabilityCNN_{opts.init_epoch}.pth")
+    readabilityCNN.load_state_dict(torch.load(readabilityFile))
+
+    with torch.no_grad():
+        for test_idx, test_batch in enumerate(test_dataloader):
+            img_A = test_batch['img_A'].to(device)
+            realReadabilityScore = (test_batch['readabilityScore'].to(device)).float()
+
+            realReadabilityScore = realReadabilityScore.reshape((realReadabilityScore.shape[0],1))
+
+            #forward
+            predictedReadabilityScore = readabilityCNN(img_A)
+
+            #loss
+            readabilityLoss = MSELoss(predictedReadabilityScore, realReadabilityScore)
+
+            img_sample = img_A.data
+            save_file = os.path.join(results_dir, f"test_{test_epoch}_idx_{test_idx}.png")
+            save_image(img_sample, save_file, nrow=8, normalize=True)
+
+        test_msg = (
+            f"Epoch: {test_epoch}/{opts.n_epochs}, "
+            f"readabilityCNN Loss: {readabilityLoss.item(): .6f}"
+        )
+        print(test_msg)
+        test_logfile.write(test_msg + "\n")
+        test_logfile.flush()
+
+def test(opts):
+    # Dirs
+    log_dir = os.path.join("readabilityCNN", "experiments", opts.experiment_name)
+    checkpoint_dir = os.path.join(log_dir, "checkpoint")
+    results_dir = os.path.join(log_dir, "results")
+
+    #Loss
+    MSELoss = torch.nn.MSELoss().to(device)
+
+    # Path to data
+    image_dir = os.path.join("./",opts.data_root, opts.dataset_name, "image")
+    attribute_path = os.path.join("./",opts.data_root, opts.dataset_name, "mdAttributes.txt")
+    font_readability_path = os.path.join("./",opts.data_root, "readability.csv")
+
+    # Dataloader
+    test_dataloader = get_loader(image_dir, attribute_path, font_readability_path,
+                                dataset_name="explor_all",
+                                image_size=64,
+                                n_style=4, batch_size=8,
+                                mode='test', binary=False,
+                                train_num=110, val_num=24)
+
+    # Model
+    readabilityCNN = ReadabilityCNN()
+
+    if opts.multi_gpu:
+        readabilityCNN = nn.DataParallel(readabilityCNN)
+    readabilityCNN = readabilityCNN.to(device)
+
+    # Testing
+    test_logfile = open(os.path.join(log_dir, f"test_loss_log_{opts.test_epoch}.txt"), 'w')
+
+    # if opts.test_epoch == 0:
+    #     for test_epoch in range(opts.check_freq, opts.n_epochs+1, opts.check_freq):
+    #         test_one_epoch(opts, test_logfile, test_epoch,
+    #                        checkpoint_dir, results_dir,
+    #                        generator, attribute_embed, attr_unsuper_tolearn,
+    #                        test_dataloader, criterion_pixel)
+    # else:
+    #     test_one_epoch(opts, test_logfile, opts.test_epoch,
+    #                    checkpoint_dir, results_dir,
+    #                    generator, attribute_embed, attr_unsuper_tolearn,
+    #                    test_dataloader, criterion_pixel)
 
 def main():
     parser = get_parser()
