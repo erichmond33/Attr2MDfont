@@ -135,7 +135,7 @@ def test_one_epoch(opts, test_logfile, test_epoch,
                    test_dataloader):
     print(f"Testing epoch: {test_epoch}")
 
-    readabilityFile = os.path.join(checkpoint_dir, f"readabilityCNN_{opts.init_epoch}.pth")
+    readabilityFile = os.path.join(checkpoint_dir, f"readabilityCNN_{test_epoch}.pth")
     readabilityCNN.load_state_dict(torch.load(readabilityFile))
 
     with torch.no_grad():
@@ -195,17 +195,17 @@ def test(opts):
     # Testing
     test_logfile = open(os.path.join(log_dir, f"test_loss_log_{opts.test_epoch}.txt"), 'w')
 
-    # if opts.test_epoch == 0:
-    #     for test_epoch in range(opts.check_freq, opts.n_epochs+1, opts.check_freq):
-    #         test_one_epoch(opts, test_logfile, test_epoch,
-    #                        checkpoint_dir, results_dir,
-    #                        generator, attribute_embed, attr_unsuper_tolearn,
-    #                        test_dataloader, criterion_pixel)
-    # else:
-    #     test_one_epoch(opts, test_logfile, opts.test_epoch,
-    #                    checkpoint_dir, results_dir,
-    #                    generator, attribute_embed, attr_unsuper_tolearn,
-    #                    test_dataloader, criterion_pixel)
+    if opts.test_epoch == 0:
+        for test_epoch in range(opts.check_freq, opts.n_epochs+1, opts.check_freq):
+            test_one_epoch(opts, test_logfile, test_epoch,
+                            checkpoint_dir, results_dir,
+                            readabilityCNN, MSELoss,
+                            test_dataloader)
+    else:
+        test_one_epoch(opts, test_logfile, test_epoch,
+                        checkpoint_dir, results_dir,
+                        readabilityCNN, MSELoss,
+                        test_dataloader)
 
 def main():
     parser = get_parser()
@@ -229,9 +229,9 @@ def main():
             for key, value in vars(opts).items():
                 f.write(str(key) + ": " + str(value) + "\n")
         train(opts)
-    # elif opts.phase == 'test':
-    #     print(f"Testing on experiment {opts.experiment_name}...")
-    #     test(opts)
+    elif opts.phase == 'test':
+        print(f"Testing on experiment {opts.experiment_name}...")
+        test(opts)
     # elif opts.phase == 'test_interp':
     #     print(f"Testing interpolation on experiment {opts.experiment_name}...")
     #     interp(opts)

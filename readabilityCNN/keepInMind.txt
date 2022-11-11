@@ -1,4 +1,9 @@
-date: 2022-11-8
+date: 2022-11-10
+
+***On second thought, the input to our readabilityCNN shouldn't be effected by their weird discriminator concat.
+Our input shape should be (3, 64, 64) not their (6, 64, 64) from the concat.
+
+date: 2022-11-9
 
 ***We need to think about our train/val/test split.
 Right now we are using an 80/20 split of just train/val and test.

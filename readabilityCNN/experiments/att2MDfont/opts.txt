@@ -1,5 +1,5 @@
 init_epoch: 1
-n_epochs: 200
+n_epochs: 3
 decay_epoch: 50
 multi_gpu: True
 data_root: data
@@ -19,7 +19,7 @@ lr: 0.0002
 b1: 0.5
 b2: 0.999
 experiment_name: att2MDfont
-check_freq: 10
+check_freq: 1
 sample_freq: 25
 log_freq: 100
 phase: train
