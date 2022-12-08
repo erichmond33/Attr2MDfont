@@ -6,14 +6,14 @@ import torch
 from torch import nn
 from torchvision.utils import save_image
 
-from readabilityCNN.dataloader import get_loader
+from dataloaderOriginal import get_loader
 from modelOriginal import CXLoss, DiscriminatorWithClassifier, GeneratorStyle
+from readabilityCNN.model import ReadabilityCNN
 from optionsOriginal import get_parser
 from vgg_cx import VGG19_CX
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
 def train(opts):
     # Dirs
@@ -27,6 +27,7 @@ def train(opts):
     criterion_pixel = torch.nn.L1Loss().to(device)
     criterion_ce = torch.nn.CrossEntropyLoss().to(device)
     criterion_attr = torch.nn.MSELoss().to(device)
+    MSELoss = torch.nn.MSELoss().to(device)
 
     # CX Loss
     if opts.lambda_cx > 0:
@@ -39,6 +40,7 @@ def train(opts):
     # Path to data
     image_dir = os.path.join(opts.data_root, opts.dataset_name, "image")
     attribute_path = os.path.join(opts.data_root, opts.dataset_name, "attributes.txt")
+    font_readability_path = os.path.join("./",opts.data_root, "readability.csv")
 
     # Dataloader
     train_dataloader = get_loader(image_dir, attribute_path,
@@ -63,16 +65,19 @@ def train(opts):
     attribute_embed = nn.Embedding(opts.attr_channel, opts.attr_embed)
     # unsupervise font num + 1 dummy id (for supervise)
     attr_unsuper_tolearn = nn.Embedding(opts.unsuper_num+1, opts.attr_channel)  # attribute intensity
+    readabilityCNN = ReadabilityCNN()
 
     if opts.multi_gpu:
         generator = nn.DataParallel(generator)
         discriminator = nn.DataParallel(discriminator)
         attribute_embed = nn.DataParallel(attribute_embed)
         attr_unsuper_tolearn = nn.DataParallel(attr_unsuper_tolearn)
+        readabilityCNN = nn.DataParallel(readabilityCNN)
     generator = generator.to(device)
     discriminator = discriminator.to(device)
     attribute_embed = attribute_embed.to(device)
     attr_unsuper_tolearn = attr_unsuper_tolearn.to(device)
+    readabilityCNN = readabilityCNN.to(device)
 
     # Discriminator output patch shape
     patch = (1, opts.img_size // 2**4, opts.img_size // 2**4)
@@ -201,6 +206,14 @@ def train(opts):
             loss_D.backward(retain_graph=True)
             optimizer_D.step()
 
+            # Forward readabilityCNN
+            predictedReadabilityScore = readabilityCNN(fake_B)
+
+            readabilityLoss = MSELoss(predictedReadabilityScore, realReadabilityScore)
+
+            readabilityLoss.backward(retain_graph=True)
+            
+            # Print/save logs & checkpoints
             batches_done = (epoch - opts.init_epoch) * len(train_dataloader) + batch_idx
             batches_left = (opts.n_epochs - opts.init_epoch) * len(train_dataloader) - batches_done
             time_left = datetime.timedelta(seconds=batches_left*(time.time() - prev_time))

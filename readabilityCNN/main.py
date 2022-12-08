@@ -108,6 +108,8 @@ def train(opts):
                         val_img_A = val_batch['img_A'].to(device)
                         val_realReadabilityScore = val_batch['readabilityScore'].to(device)
 
+                        val_realReadabilityScore = val_realReadabilityScore.reshape((val_realReadabilityScore.shape[0],1))
+
                         val_predictedReadabilityScore = readabilityCNN(val_img_A)
 
                         val_readabilityLoss += MSELoss(val_predictedReadabilityScore, val_realReadabilityScore)
@@ -173,9 +175,9 @@ def test(opts):
     MSELoss = torch.nn.MSELoss().to(device)
 
     # Path to data
-    image_dir = os.path.join("./",opts.data_root, opts.dataset_name, "image")
-    attribute_path = os.path.join("./",opts.data_root, opts.dataset_name, "mdAttributes.txt")
-    font_readability_path = os.path.join("./",opts.data_root, "readability.csv")
+    image_dir = os.path.join("../",opts.data_root, opts.dataset_name, "image")
+    attribute_path = os.path.join("../",opts.data_root, opts.dataset_name, "mdAttributes.txt")
+    font_readability_path = os.path.join("../",opts.data_root, "readability.csv")
 
     # Dataloader
     test_dataloader = get_loader(image_dir, attribute_path, font_readability_path,

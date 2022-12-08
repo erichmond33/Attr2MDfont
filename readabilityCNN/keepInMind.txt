@@ -1,7 +1,13 @@
+date: 2022-12-6
+
+*** Do we want to change the learning rate or either betas for our optimizer?
+
+
 date: 2022-11-10
 
 ***On second thought, the input to our readabilityCNN shouldn't be effected by their weird discriminator concat.
 Our input shape should be (3, 64, 64) not their (6, 64, 64) from the concat.
+
 
 date: 2022-11-9
 
