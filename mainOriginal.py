@@ -127,6 +127,7 @@ def train(opts):
 
             valid = torch.ones((img_A.size(0), *patch)).to(device)
             fake = torch.zeros((img_A.size(0), *patch)).to(device)
+            perfectReadabilityScore = torch.ones((train_dataloader.batch_size, 1)).to(device)
 
             # Construct attribute
             attr_raw_A = attribute_embed(attrid)
@@ -183,6 +184,13 @@ def train(opts):
 
             optimizer_G.zero_grad()
             loss_G.backward(retain_graph=True)
+
+            # Forward readabilityCNN
+            predictedReadabilityScore = readabilityCNN(fake_B)
+
+            readabilityLoss = MSELoss(predictedReadabilityScore, perfectReadabilityScore)
+
+            readabilityLoss.backward(retain_graph=True)
             optimizer_G.step()
 
             # Forward D
@@ -205,13 +213,6 @@ def train(opts):
             optimizer_D.zero_grad()
             loss_D.backward(retain_graph=True)
             optimizer_D.step()
-
-            # Forward readabilityCNN
-            predictedReadabilityScore = readabilityCNN(fake_B)
-
-            readabilityLoss = MSELoss(predictedReadabilityScore, realReadabilityScore)
-
-            readabilityLoss.backward(retain_graph=True)
             
             # Print/save logs & checkpoints
             batches_done = (epoch - opts.init_epoch) * len(train_dataloader) + batch_idx
@@ -226,7 +227,8 @@ def train(opts):
                 f"loss_adv: {loss_GAN.item():.6f}, "
                 f"loss_char_A: {loss_char_A.item():.6f}, "
                 f"loss_CX: {loss_CX.item():.6f}, "
-                f"loss_attr: {loss_attr.item(): .6f}"
+                f"loss_attr: {loss_attr.item(): .6f}, "
+                f"readabilityLoss: {readabilityLoss.item(): .6f}"
             )
 
             print(message)
@@ -578,7 +580,7 @@ def main():
     if opts.phase == 'train':
         # Create directories
         log_dir = os.path.join("experiments", opts.experiment_name)
-        os.makedirs(log_dir, exist_ok=False)  # False to prevent multiple train run by mistake
+        os.makedirs(log_dir, exist_ok=True)  # False to prevent multiple train run by mistake
         os.makedirs(os.path.join(log_dir, "samples"), exist_ok=True)
         os.makedirs(os.path.join(log_dir, "checkpoint"), exist_ok=True)
         os.makedirs(os.path.join(log_dir, "results"), exist_ok=True)
