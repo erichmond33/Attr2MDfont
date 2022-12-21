@@ -79,6 +79,9 @@ def train(opts):
     attr_unsuper_tolearn = attr_unsuper_tolearn.to(device)
     readabilityCNN = readabilityCNN.to(device)
 
+    # Load in the pretrained readabilityCNN model
+    readabilityCNN.load_state_dict(torch.load("readabilityCNN_1.pth"))
+
     # Discriminator output patch shape
     patch = (1, opts.img_size // 2**4, opts.img_size // 2**4)
 
@@ -152,7 +155,7 @@ def train(opts):
             delta_intensity = attr_B_intensity - attr_A_intensity
             delta_attr = attr_B - attr_A
 
-            # Forward G and D
+            # Training the Generator
             fake_B, content_logits_A = generator(img_A, styles_A, delta_intensity, delta_attr)
 
             pred_fake, real_A_attr_fake, fake_B_attr_fake = discriminator(img_A, fake_B, charclass_B, attr_B_intensity)
@@ -180,20 +183,17 @@ def train(opts):
                     cx = criterion_cx(vgg_img_B[l], vgg_fake_B[l])
                     loss_CX += cx * opts.lambda_cx
 
-            loss_G = loss_GAN + loss_pixel + loss_char_A + loss_CX + loss_attr      # This is where we need to do the weighted average
+            # readabilityCNN
+            predictedReadabilityScore = readabilityCNN(fake_B)
+            readabilityLoss = MSELoss(predictedReadabilityScore, perfectReadabilityScore)
+
+            loss_G = loss_GAN + loss_pixel + loss_char_A + loss_CX + loss_attr + readabilityLoss
 
             optimizer_G.zero_grad()
             loss_G.backward(retain_graph=True)
-
-            # Forward readabilityCNN
-            predictedReadabilityScore = readabilityCNN(fake_B)
-
-            readabilityLoss = MSELoss(predictedReadabilityScore, perfectReadabilityScore)
-
-            readabilityLoss.backward(retain_graph=True)
             optimizer_G.step()
 
-            # Forward D
+            # Training the Discriminator
             pred_real, A_attr_real, B_attr_real = discriminator(img_A, img_B, charclass_B, attr_B_intensity.detach())
             loss_real = criterion_GAN(pred_real, valid)
 
@@ -580,7 +580,7 @@ def main():
     if opts.phase == 'train':
         # Create directories
         log_dir = os.path.join("experiments", opts.experiment_name)
-        os.makedirs(log_dir, exist_ok=True)  # False to prevent multiple train run by mistake
+        os.makedirs(log_dir, exist_ok=False)  # False to prevent multiple train run by mistake
         os.makedirs(os.path.join(log_dir, "samples"), exist_ok=True)
         os.makedirs(os.path.join(log_dir, "checkpoint"), exist_ok=True)
         os.makedirs(os.path.join(log_dir, "results"), exist_ok=True)

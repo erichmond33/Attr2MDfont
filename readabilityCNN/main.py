@@ -59,6 +59,7 @@ def train(opts):
     prev_time = time.time()
     logfile = open(os.path.join(log_dir, "loss_log.txt"), 'w')
     val_logfile = open(os.path.join(log_dir, "val_loss_log.txt"), 'w')
+    pred_logfile = open(os.path.join(log_dir, "pred_log.txt"), 'w')
 
     for epoch in range(opts.init_epoch, opts.n_epochs+1):
         for batch_idx, batch in enumerate(train_dataloader):
@@ -91,6 +92,15 @@ def train(opts):
             print(message)
             logfile.write(message + '\n')
             logfile.flush()
+
+            mess = (
+                f"Epoch: {epoch}/{opts.n_epochs}, Batch: {batch_idx}/{len(train_dataloader)}, ETA: {time_left}, "
+                f"realReadabilityScore: {realReadabilityScore}, "
+                f"predictedReadabilityScore: {predictedReadabilityScore}"
+            )
+
+            pred_logfile.write(mess + '\n')
+            pred_logfile.flush()
 
             if batches_done % opts.log_freq == 0:
                 img_sample = img_A.data
@@ -175,9 +185,9 @@ def test(opts):
     MSELoss = torch.nn.MSELoss().to(device)
 
     # Path to data
-    image_dir = os.path.join("../",opts.data_root, opts.dataset_name, "image")
-    attribute_path = os.path.join("../",opts.data_root, opts.dataset_name, "mdAttributes.txt")
-    font_readability_path = os.path.join("../",opts.data_root, "readability.csv")
+    image_dir = os.path.join("./",opts.data_root, opts.dataset_name, "image")
+    attribute_path = os.path.join("./",opts.data_root, opts.dataset_name, "mdAttributes.txt")
+    font_readability_path = os.path.join("./",opts.data_root, "readability.csv")
 
     # Dataloader
     test_dataloader = get_loader(image_dir, attribute_path, font_readability_path,

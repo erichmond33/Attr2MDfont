@@ -1,0 +1,35 @@
+date: 2022-12-20
+
+*** The readabilityCNN is trained on real fonts, so it might be worth trying to add the readabilityCNN in towards the very end of training.
+
+
+date: 2022-12-6
+
+*** Do we want to change the learning rate or either betas for our optimizer?
+
+
+date: 2022-11-10
+
+***On second thought, the input to our readabilityCNN shouldn't be effected by their weird discriminator concat.
+Our input shape should be (3, 64, 64) not their (6, 64, 64) from the concat.
+
+
+date: 2022-11-9
+
+***We need to think about our train/val/test split.
+Right now we are using an 80/20 split of just train/val and test.
+Maybe that is okay.
+
+***Save image has nrows hardcoded in a couple of different places.
+Might should keep an eye on that.
+
+
+date: 2022-11-2
+
+***Our readabilityCNN's inputs may have to be changed since we are doing concatenation anymore.
+(This may be a problem when integrated with the GAN)
+
+***In main.py on line 224 a weird concat happens to make the image sample.
+We may have to do this before passing it into our CNN once we integrate it after training.
+
+***We might want to change val_idx on line 234

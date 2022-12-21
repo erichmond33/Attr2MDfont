@@ -21,7 +21,7 @@ b2: 0.999
 experiment_name: att2font_en
 check_freq: 10
 sample_freq: 400
-log_freq: 100
+log_freq: 50
 phase: train
 test_epoch: 0
 interp_cnt: 11

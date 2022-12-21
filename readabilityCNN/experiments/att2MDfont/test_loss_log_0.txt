@@ -1,3 +1,3 @@
-Epoch: 1/3, readabilityCNN Loss:  0.201284
-Epoch: 2/3, readabilityCNN Loss:  0.120575
-Epoch: 3/3, readabilityCNN Loss:  0.137429
+Epoch: 1/3, readabilityCNN Loss:  0.175621
+Epoch: 2/3, readabilityCNN Loss:  0.101067
+Epoch: 3/3, readabilityCNN Loss:  0.056138

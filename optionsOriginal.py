@@ -33,7 +33,7 @@ def get_parser():
     parser.add_argument("--experiment_name", type=str, default="att2font_en", help='experiment name')
     parser.add_argument("--check_freq", type=int, default=10, help='frequency of checkpoint epoch')
     parser.add_argument("--sample_freq", type=int, default=400, help="frequency of sample validation batch")
-    parser.add_argument("--log_freq", type=int, default=100, help="frequency of sample training batch")
+    parser.add_argument("--log_freq", type=int, default=50, help="frequency of sample training batch")
     parser.add_argument("--phase", type=str, default='train', choices=['train', 'test', 'test_interp'], help='mode')
     parser.add_argument("--test_epoch", type=int, default=0, help='epoch to test, 0 to test all epoches')
     parser.add_argument("--interp_cnt", type=int, default=11, help='number of interpolations')
