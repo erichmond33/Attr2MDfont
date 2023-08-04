@@ -1,0 +1,445 @@
+Epoch: 1/5, Batch: 0/89, ETA: 0:00:27.871744, readabilityCNN loss: 0.356303
+Epoch: 1/5, Batch: 1/89, ETA: 0:02:45.835193, readabilityCNN loss: 0.512546
+Epoch: 1/5, Batch: 2/89, ETA: 0:00:31.585669, readabilityCNN loss: 0.132072
+Epoch: 1/5, Batch: 3/89, ETA: 0:00:33.376702, readabilityCNN loss: 0.126239
+Epoch: 1/5, Batch: 4/89, ETA: 0:00:30.945892, readabilityCNN loss: 0.091661
+Epoch: 1/5, Batch: 5/89, ETA: 0:00:31.996093, readabilityCNN loss: 0.048856
+Epoch: 1/5, Batch: 6/89, ETA: 0:00:30.873287, readabilityCNN loss: 0.108052
+Epoch: 1/5, Batch: 7/89, ETA: 0:00:32.013978, readabilityCNN loss: 0.066307
+Epoch: 1/5, Batch: 8/89, ETA: 0:00:30.454845, readabilityCNN loss: 0.098706
+Epoch: 1/5, Batch: 9/89, ETA: 0:00:32.052236, readabilityCNN loss: 0.048588
+Epoch: 1/5, Batch: 10/89, ETA: 0:00:30.580586, readabilityCNN loss: 0.077302
+Epoch: 1/5, Batch: 11/89, ETA: 0:00:31.043390, readabilityCNN loss: 0.081084
+Epoch: 1/5, Batch: 12/89, ETA: 0:00:30.470745, readabilityCNN loss: 0.063431
+Epoch: 1/5, Batch: 13/89, ETA: 0:00:31.381735, readabilityCNN loss: 0.064984
+Epoch: 1/5, Batch: 14/89, ETA: 0:00:30.587294, readabilityCNN loss: 0.079757
+Epoch: 1/5, Batch: 15/89, ETA: 0:00:30.985905, readabilityCNN loss: 0.084501
+Epoch: 1/5, Batch: 16/89, ETA: 0:00:30.235434, readabilityCNN loss: 0.045502
+Epoch: 1/5, Batch: 17/89, ETA: 0:00:30.689966, readabilityCNN loss: 0.063948
+Epoch: 1/5, Batch: 18/89, ETA: 0:00:30.327942, readabilityCNN loss: 0.083958
+Epoch: 1/5, Batch: 19/89, ETA: 0:00:30.570852, readabilityCNN loss: 0.069494
+Epoch: 1/5, Batch: 20/89, ETA: 0:00:29.997963, readabilityCNN loss: 0.055606
+Epoch: 1/5, Batch: 21/89, ETA: 0:00:30.320734, readabilityCNN loss: 0.054844
+Epoch: 1/5, Batch: 22/89, ETA: 0:00:29.752991, readabilityCNN loss: 0.075567
+Epoch: 1/5, Batch: 23/89, ETA: 0:00:30.275636, readabilityCNN loss: 0.071238
+Epoch: 1/5, Batch: 24/89, ETA: 0:00:29.747704, readabilityCNN loss: 0.071393
+Epoch: 1/5, Batch: 25/89, ETA: 0:00:30.059077, readabilityCNN loss: 0.057091
+Epoch: 1/5, Batch: 26/89, ETA: 0:02:19.856908, readabilityCNN loss: 0.058370
+Epoch: 1/5, Batch: 27/89, ETA: 0:00:29.894629, readabilityCNN loss: 0.068655
+Epoch: 1/5, Batch: 28/89, ETA: 0:00:29.903627, readabilityCNN loss: 0.064578
+Epoch: 1/5, Batch: 29/89, ETA: 0:00:30.056715, readabilityCNN loss: 0.056284
+Epoch: 1/5, Batch: 30/89, ETA: 0:00:28.985471, readabilityCNN loss: 0.052259
+Epoch: 1/5, Batch: 31/89, ETA: 0:00:29.568285, readabilityCNN loss: 0.065010
+Epoch: 1/5, Batch: 32/89, ETA: 0:00:28.963454, readabilityCNN loss: 0.076686
+Epoch: 1/5, Batch: 33/89, ETA: 0:00:29.304927, readabilityCNN loss: 0.099177
+Epoch: 1/5, Batch: 34/89, ETA: 0:00:28.564796, readabilityCNN loss: 0.063771
+Epoch: 1/5, Batch: 35/89, ETA: 0:00:29.404040, readabilityCNN loss: 0.068648
+Epoch: 1/5, Batch: 36/89, ETA: 0:00:27.964020, readabilityCNN loss: 0.158702
+Epoch: 1/5, Batch: 37/89, ETA: 0:00:29.227226, readabilityCNN loss: 0.140268
+Epoch: 1/5, Batch: 38/89, ETA: 0:00:28.245891, readabilityCNN loss: 0.068687
+Epoch: 1/5, Batch: 39/89, ETA: 0:00:28.958580, readabilityCNN loss: 0.124083
+Epoch: 1/5, Batch: 40/89, ETA: 0:00:27.980623, readabilityCNN loss: 0.080533
+Epoch: 1/5, Batch: 41/89, ETA: 0:00:28.527288, readabilityCNN loss: 0.086635
+Epoch: 1/5, Batch: 42/89, ETA: 0:00:28.057917, readabilityCNN loss: 0.068992
+Epoch: 1/5, Batch: 43/89, ETA: 0:00:28.523770, readabilityCNN loss: 0.086995
+Epoch: 1/5, Batch: 44/89, ETA: 0:00:27.710123, readabilityCNN loss: 0.059138
+Epoch: 1/5, Batch: 45/89, ETA: 0:00:28.126258, readabilityCNN loss: 0.066758
+Epoch: 1/5, Batch: 46/89, ETA: 0:00:27.440846, readabilityCNN loss: 0.049421
+Epoch: 1/5, Batch: 47/89, ETA: 0:00:28.439937, readabilityCNN loss: 0.054734
+Epoch: 1/5, Batch: 48/89, ETA: 0:00:27.399879, readabilityCNN loss: 0.073736
+Epoch: 1/5, Batch: 49/89, ETA: 0:00:27.766701, readabilityCNN loss: 0.051966
+Epoch: 1/5, Batch: 50/89, ETA: 0:00:27.243699, readabilityCNN loss: 0.084922
+Epoch: 1/5, Batch: 51/89, ETA: 0:02:08.849015, readabilityCNN loss: 0.067013
+Epoch: 1/5, Batch: 52/89, ETA: 0:00:27.187908, readabilityCNN loss: 0.065352
+Epoch: 1/5, Batch: 53/89, ETA: 0:00:26.428513, readabilityCNN loss: 0.048789
+Epoch: 1/5, Batch: 54/89, ETA: 0:00:27.930383, readabilityCNN loss: 0.045985
+Epoch: 1/5, Batch: 55/89, ETA: 0:00:26.833777, readabilityCNN loss: 0.051229
+Epoch: 1/5, Batch: 56/89, ETA: 0:00:27.276492, readabilityCNN loss: 0.054791
+Epoch: 1/5, Batch: 57/89, ETA: 0:00:26.501570, readabilityCNN loss: 0.059046
+Epoch: 1/5, Batch: 58/89, ETA: 0:00:27.301472, readabilityCNN loss: 0.077083
+Epoch: 1/5, Batch: 59/89, ETA: 0:00:26.220140, readabilityCNN loss: 0.061791
+Epoch: 1/5, Batch: 60/89, ETA: 0:00:26.699467, readabilityCNN loss: 0.053124
+Epoch: 1/5, Batch: 61/89, ETA: 0:00:27.158430, readabilityCNN loss: 0.053568
+Epoch: 1/5, Batch: 62/89, ETA: 0:00:26.445956, readabilityCNN loss: 0.056647
+Epoch: 1/5, Batch: 63/89, ETA: 0:00:26.698022, readabilityCNN loss: 0.041283
+Epoch: 1/5, Batch: 64/89, ETA: 0:00:26.555106, readabilityCNN loss: 0.053069
+Epoch: 1/5, Batch: 65/89, ETA: 0:00:26.262130, readabilityCNN loss: 0.045404
+Epoch: 1/5, Batch: 66/89, ETA: 0:00:26.192210, readabilityCNN loss: 0.068333
+Epoch: 1/5, Batch: 67/89, ETA: 0:00:26.451574, readabilityCNN loss: 0.054720
+Epoch: 1/5, Batch: 68/89, ETA: 0:00:25.449829, readabilityCNN loss: 0.077318
+Epoch: 1/5, Batch: 69/89, ETA: 0:00:26.069946, readabilityCNN loss: 0.076847
+Epoch: 1/5, Batch: 70/89, ETA: 0:00:25.354715, readabilityCNN loss: 0.063880
+Epoch: 1/5, Batch: 71/89, ETA: 0:00:25.759102, readabilityCNN loss: 0.052361
+Epoch: 1/5, Batch: 72/89, ETA: 0:00:26.305540, readabilityCNN loss: 0.053914
+Epoch: 1/5, Batch: 73/89, ETA: 0:00:25.944375, readabilityCNN loss: 0.060285
+Epoch: 1/5, Batch: 74/89, ETA: 0:00:24.781727, readabilityCNN loss: 0.053073
+Epoch: 1/5, Batch: 75/89, ETA: 0:00:25.548043, readabilityCNN loss: 0.067174
+Epoch: 1/5, Batch: 76/89, ETA: 0:01:57.638474, readabilityCNN loss: 0.048315
+Epoch: 1/5, Batch: 77/89, ETA: 0:00:24.286873, readabilityCNN loss: 0.063921
+Epoch: 1/5, Batch: 78/89, ETA: 0:00:25.670054, readabilityCNN loss: 0.059199
+Epoch: 1/5, Batch: 79/89, ETA: 0:00:24.334212, readabilityCNN loss: 0.064550
+Epoch: 1/5, Batch: 80/89, ETA: 0:00:25.054298, readabilityCNN loss: 0.060601
+Epoch: 1/5, Batch: 81/89, ETA: 0:00:24.465424, readabilityCNN loss: 0.060800
+Epoch: 1/5, Batch: 82/89, ETA: 0:00:24.871178, readabilityCNN loss: 0.046695
+Epoch: 1/5, Batch: 83/89, ETA: 0:00:24.369505, readabilityCNN loss: 0.045999
+Epoch: 1/5, Batch: 84/89, ETA: 0:00:24.211109, readabilityCNN loss: 0.073249
+Epoch: 1/5, Batch: 85/89, ETA: 0:00:24.428162, readabilityCNN loss: 0.060191
+Epoch: 1/5, Batch: 86/89, ETA: 0:00:24.340918, readabilityCNN loss: 0.046830
+Epoch: 1/5, Batch: 87/89, ETA: 0:00:24.202088, readabilityCNN loss: 0.056172
+Epoch: 1/5, Batch: 88/89, ETA: 0:00:24.127772, readabilityCNN loss: 0.053859
+Epoch: 2/5, Batch: 0/89, ETA: 0:00:25.857655, readabilityCNN loss: 0.044091
+Epoch: 2/5, Batch: 1/89, ETA: 0:00:23.522424, readabilityCNN loss: 0.050036
+Epoch: 2/5, Batch: 2/89, ETA: 0:00:23.078854, readabilityCNN loss: 0.042254
+Epoch: 2/5, Batch: 3/89, ETA: 0:00:24.076389, readabilityCNN loss: 0.044849
+Epoch: 2/5, Batch: 4/89, ETA: 0:00:23.062187, readabilityCNN loss: 0.044604
+Epoch: 2/5, Batch: 5/89, ETA: 0:00:23.628388, readabilityCNN loss: 0.044122
+Epoch: 2/5, Batch: 6/89, ETA: 0:00:23.149346, readabilityCNN loss: 0.052840
+Epoch: 2/5, Batch: 7/89, ETA: 0:00:23.648243, readabilityCNN loss: 0.046645
+Epoch: 2/5, Batch: 8/89, ETA: 0:00:23.096013, readabilityCNN loss: 0.063186
+Epoch: 2/5, Batch: 9/89, ETA: 0:00:23.307263, readabilityCNN loss: 0.050050
+Epoch: 2/5, Batch: 10/89, ETA: 0:00:22.777042, readabilityCNN loss: 0.044249
+Epoch: 2/5, Batch: 11/89, ETA: 0:00:22.149841, readabilityCNN loss: 0.032157
+Epoch: 2/5, Batch: 12/89, ETA: 0:01:55.462732, readabilityCNN loss: 0.033721
+Epoch: 2/5, Batch: 13/89, ETA: 0:00:23.178939, readabilityCNN loss: 0.050203
+Epoch: 2/5, Batch: 14/89, ETA: 0:00:22.485148, readabilityCNN loss: 0.048601
+Epoch: 2/5, Batch: 15/89, ETA: 0:00:22.379030, readabilityCNN loss: 0.054460
+Epoch: 2/5, Batch: 16/89, ETA: 0:00:21.789817, readabilityCNN loss: 0.054222
+Epoch: 2/5, Batch: 17/89, ETA: 0:00:22.640705, readabilityCNN loss: 0.064253
+Epoch: 2/5, Batch: 18/89, ETA: 0:00:21.953809, readabilityCNN loss: 0.051599
+Epoch: 2/5, Batch: 19/89, ETA: 0:00:22.097776, readabilityCNN loss: 0.042965
+Epoch: 2/5, Batch: 20/89, ETA: 0:00:22.167144, readabilityCNN loss: 0.061472
+Epoch: 2/5, Batch: 21/89, ETA: 0:00:22.047662, readabilityCNN loss: 0.037798
+Epoch: 2/5, Batch: 22/89, ETA: 0:00:22.303197, readabilityCNN loss: 0.077224
+Epoch: 2/5, Batch: 23/89, ETA: 0:00:21.666898, readabilityCNN loss: 0.058300
+Epoch: 2/5, Batch: 24/89, ETA: 0:00:21.403249, readabilityCNN loss: 0.054457
+Epoch: 2/5, Batch: 25/89, ETA: 0:00:21.615888, readabilityCNN loss: 0.061543
+Epoch: 2/5, Batch: 26/89, ETA: 0:00:21.659354, readabilityCNN loss: 0.039954
+Epoch: 2/5, Batch: 27/89, ETA: 0:00:21.153431, readabilityCNN loss: 0.037982
+Epoch: 2/5, Batch: 28/89, ETA: 0:00:21.650725, readabilityCNN loss: 0.051028
+Epoch: 2/5, Batch: 29/89, ETA: 0:00:21.017894, readabilityCNN loss: 0.056870
+Epoch: 2/5, Batch: 30/89, ETA: 0:00:21.538540, readabilityCNN loss: 0.051563
+Epoch: 2/5, Batch: 31/89, ETA: 0:00:21.240317, readabilityCNN loss: 0.043589
+Epoch: 2/5, Batch: 32/89, ETA: 0:00:21.118044, readabilityCNN loss: 0.036868
+Epoch: 2/5, Batch: 33/89, ETA: 0:00:21.090385, readabilityCNN loss: 0.049869
+Epoch: 2/5, Batch: 34/89, ETA: 0:00:21.186575, readabilityCNN loss: 0.046206
+Epoch: 2/5, Batch: 35/89, ETA: 0:00:20.727648, readabilityCNN loss: 0.060465
+Epoch: 2/5, Batch: 36/89, ETA: 0:00:20.731987, readabilityCNN loss: 0.055320
+Epoch: 2/5, Batch: 37/89, ETA: 0:01:37.382586, readabilityCNN loss: 0.048006
+Epoch: 2/5, Batch: 38/89, ETA: 0:00:19.651133, readabilityCNN loss: 0.032390
+Epoch: 2/5, Batch: 39/89, ETA: 0:00:20.548465, readabilityCNN loss: 0.045890
+Epoch: 2/5, Batch: 40/89, ETA: 0:00:20.783770, readabilityCNN loss: 0.050617
+Epoch: 2/5, Batch: 41/89, ETA: 0:00:20.230491, readabilityCNN loss: 0.042570
+Epoch: 2/5, Batch: 42/89, ETA: 0:00:20.034546, readabilityCNN loss: 0.055406
+Epoch: 2/5, Batch: 43/89, ETA: 0:00:20.101929, readabilityCNN loss: 0.044108
+Epoch: 2/5, Batch: 44/89, ETA: 0:00:19.820626, readabilityCNN loss: 0.063657
+Epoch: 2/5, Batch: 45/89, ETA: 0:00:19.068968, readabilityCNN loss: 0.040161
+Epoch: 2/5, Batch: 46/89, ETA: 0:00:19.200578, readabilityCNN loss: 0.046517
+Epoch: 2/5, Batch: 47/89, ETA: 0:00:18.992901, readabilityCNN loss: 0.051957
+Epoch: 2/5, Batch: 48/89, ETA: 0:00:19.729091, readabilityCNN loss: 0.038514
+Epoch: 2/5, Batch: 49/89, ETA: 0:00:20.260472, readabilityCNN loss: 0.058443
+Epoch: 2/5, Batch: 50/89, ETA: 0:00:19.759227, readabilityCNN loss: 0.060053
+Epoch: 2/5, Batch: 51/89, ETA: 0:00:19.414026, readabilityCNN loss: 0.053838
+Epoch: 2/5, Batch: 52/89, ETA: 0:00:18.996185, readabilityCNN loss: 0.047965
+Epoch: 2/5, Batch: 53/89, ETA: 0:00:19.092631, readabilityCNN loss: 0.053248
+Epoch: 2/5, Batch: 54/89, ETA: 0:00:18.311746, readabilityCNN loss: 0.049657
+Epoch: 2/5, Batch: 55/89, ETA: 0:00:19.062291, readabilityCNN loss: 0.035667
+Epoch: 2/5, Batch: 56/89, ETA: 0:00:18.534056, readabilityCNN loss: 0.054223
+Epoch: 2/5, Batch: 57/89, ETA: 0:00:18.279741, readabilityCNN loss: 0.051990
+Epoch: 2/5, Batch: 58/89, ETA: 0:00:18.565319, readabilityCNN loss: 0.042599
+Epoch: 2/5, Batch: 59/89, ETA: 0:00:18.378696, readabilityCNN loss: 0.043501
+Epoch: 2/5, Batch: 60/89, ETA: 0:00:17.981785, readabilityCNN loss: 0.044358
+Epoch: 2/5, Batch: 61/89, ETA: 0:00:17.921634, readabilityCNN loss: 0.043429
+Epoch: 2/5, Batch: 62/89, ETA: 0:01:31.197518, readabilityCNN loss: 0.043503
+Epoch: 2/5, Batch: 63/89, ETA: 0:00:18.338387, readabilityCNN loss: 0.049706
+Epoch: 2/5, Batch: 64/89, ETA: 0:00:17.963907, readabilityCNN loss: 0.036908
+Epoch: 2/5, Batch: 65/89, ETA: 0:00:17.946597, readabilityCNN loss: 0.058020
+Epoch: 2/5, Batch: 66/89, ETA: 0:00:17.997445, readabilityCNN loss: 0.051443
+Epoch: 2/5, Batch: 67/89, ETA: 0:00:17.523193, readabilityCNN loss: 0.068693
+Epoch: 2/5, Batch: 68/89, ETA: 0:00:18.042260, readabilityCNN loss: 0.074198
+Epoch: 2/5, Batch: 69/89, ETA: 0:00:17.850243, readabilityCNN loss: 0.047424
+Epoch: 2/5, Batch: 70/89, ETA: 0:00:17.802361, readabilityCNN loss: 0.050066
+Epoch: 2/5, Batch: 71/89, ETA: 0:00:17.312873, readabilityCNN loss: 0.037782
+Epoch: 2/5, Batch: 72/89, ETA: 0:00:17.461742, readabilityCNN loss: 0.042984
+Epoch: 2/5, Batch: 73/89, ETA: 0:00:17.210216, readabilityCNN loss: 0.039121
+Epoch: 2/5, Batch: 74/89, ETA: 0:00:17.854243, readabilityCNN loss: 0.037305
+Epoch: 2/5, Batch: 75/89, ETA: 0:00:16.888504, readabilityCNN loss: 0.038430
+Epoch: 2/5, Batch: 76/89, ETA: 0:00:17.186887, readabilityCNN loss: 0.049642
+Epoch: 2/5, Batch: 77/89, ETA: 0:00:17.016361, readabilityCNN loss: 0.051552
+Epoch: 2/5, Batch: 78/89, ETA: 0:00:16.912156, readabilityCNN loss: 0.047147
+Epoch: 2/5, Batch: 79/89, ETA: 0:00:16.891073, readabilityCNN loss: 0.068681
+Epoch: 2/5, Batch: 80/89, ETA: 0:00:16.880230, readabilityCNN loss: 0.048593
+Epoch: 2/5, Batch: 81/89, ETA: 0:00:16.643931, readabilityCNN loss: 0.049869
+Epoch: 2/5, Batch: 82/89, ETA: 0:00:16.269999, readabilityCNN loss: 0.052107
+Epoch: 2/5, Batch: 83/89, ETA: 0:00:16.603941, readabilityCNN loss: 0.049513
+Epoch: 2/5, Batch: 84/89, ETA: 0:00:15.956409, readabilityCNN loss: 0.030831
+Epoch: 2/5, Batch: 85/89, ETA: 0:00:16.475968, readabilityCNN loss: 0.037619
+Epoch: 2/5, Batch: 86/89, ETA: 0:00:16.128244, readabilityCNN loss: 0.060967
+Epoch: 2/5, Batch: 87/89, ETA: 0:01:15.831800, readabilityCNN loss: 0.068366
+Epoch: 2/5, Batch: 88/89, ETA: 0:00:16.427330, readabilityCNN loss: 0.053547
+Epoch: 3/5, Batch: 0/89, ETA: 0:00:17.105222, readabilityCNN loss: 0.029798
+Epoch: 3/5, Batch: 1/89, ETA: 0:00:15.832798, readabilityCNN loss: 0.028866
+Epoch: 3/5, Batch: 2/89, ETA: 0:00:15.221848, readabilityCNN loss: 0.067480
+Epoch: 3/5, Batch: 3/89, ETA: 0:00:15.882540, readabilityCNN loss: 0.065595
+Epoch: 3/5, Batch: 4/89, ETA: 0:00:15.371748, readabilityCNN loss: 0.047004
+Epoch: 3/5, Batch: 5/89, ETA: 0:00:15.549321, readabilityCNN loss: 0.032236
+Epoch: 3/5, Batch: 6/89, ETA: 0:00:15.300370, readabilityCNN loss: 0.061623
+Epoch: 3/5, Batch: 7/89, ETA: 0:00:15.446288, readabilityCNN loss: 0.037437
+Epoch: 3/5, Batch: 8/89, ETA: 0:00:15.114272, readabilityCNN loss: 0.042691
+Epoch: 3/5, Batch: 9/89, ETA: 0:00:14.701249, readabilityCNN loss: 0.039475
+Epoch: 3/5, Batch: 10/89, ETA: 0:00:15.169893, readabilityCNN loss: 0.034270
+Epoch: 3/5, Batch: 11/89, ETA: 0:00:14.802159, readabilityCNN loss: 0.053380
+Epoch: 3/5, Batch: 12/89, ETA: 0:00:15.037307, readabilityCNN loss: 0.033696
+Epoch: 3/5, Batch: 13/89, ETA: 0:00:14.683896, readabilityCNN loss: 0.040934
+Epoch: 3/5, Batch: 14/89, ETA: 0:00:14.863955, readabilityCNN loss: 0.036877
+Epoch: 3/5, Batch: 15/89, ETA: 0:00:14.547803, readabilityCNN loss: 0.043157
+Epoch: 3/5, Batch: 16/89, ETA: 0:00:14.625717, readabilityCNN loss: 0.049850
+Epoch: 3/5, Batch: 17/89, ETA: 0:00:14.394714, readabilityCNN loss: 0.063315
+Epoch: 3/5, Batch: 18/89, ETA: 0:00:14.515648, readabilityCNN loss: 0.068058
+Epoch: 3/5, Batch: 19/89, ETA: 0:00:14.268173, readabilityCNN loss: 0.040848
+Epoch: 3/5, Batch: 20/89, ETA: 0:00:14.292238, readabilityCNN loss: 0.061093
+Epoch: 3/5, Batch: 21/89, ETA: 0:00:14.078668, readabilityCNN loss: 0.053345
+Epoch: 3/5, Batch: 22/89, ETA: 0:00:14.033403, readabilityCNN loss: 0.047176
+Epoch: 3/5, Batch: 23/89, ETA: 0:01:09.843577, readabilityCNN loss: 0.047574
+Epoch: 3/5, Batch: 24/89, ETA: 0:00:14.142263, readabilityCNN loss: 0.041463
+Epoch: 3/5, Batch: 25/89, ETA: 0:00:13.612511, readabilityCNN loss: 0.051982
+Epoch: 3/5, Batch: 26/89, ETA: 0:00:13.550901, readabilityCNN loss: 0.047597
+Epoch: 3/5, Batch: 27/89, ETA: 0:00:13.150268, readabilityCNN loss: 0.037841
+Epoch: 3/5, Batch: 28/89, ETA: 0:00:13.959467, readabilityCNN loss: 0.041203
+Epoch: 3/5, Batch: 29/89, ETA: 0:00:13.188599, readabilityCNN loss: 0.035093
+Epoch: 3/5, Batch: 30/89, ETA: 0:00:13.476092, readabilityCNN loss: 0.030890
+Epoch: 3/5, Batch: 31/89, ETA: 0:00:13.097823, readabilityCNN loss: 0.032702
+Epoch: 3/5, Batch: 32/89, ETA: 0:00:13.034829, readabilityCNN loss: 0.048894
+Epoch: 3/5, Batch: 33/89, ETA: 0:00:13.045874, readabilityCNN loss: 0.039232
+Epoch: 3/5, Batch: 34/89, ETA: 0:00:12.427082, readabilityCNN loss: 0.037900
+Epoch: 3/5, Batch: 35/89, ETA: 0:00:12.902002, readabilityCNN loss: 0.046195
+Epoch: 3/5, Batch: 36/89, ETA: 0:00:12.682484, readabilityCNN loss: 0.040669
+Epoch: 3/5, Batch: 37/89, ETA: 0:00:12.617005, readabilityCNN loss: 0.032722
+Epoch: 3/5, Batch: 38/89, ETA: 0:00:12.490907, readabilityCNN loss: 0.053911
+Epoch: 3/5, Batch: 39/89, ETA: 0:00:12.657561, readabilityCNN loss: 0.048336
+Epoch: 3/5, Batch: 40/89, ETA: 0:00:12.465162, readabilityCNN loss: 0.023581
+Epoch: 3/5, Batch: 41/89, ETA: 0:00:12.579177, readabilityCNN loss: 0.045093
+Epoch: 3/5, Batch: 42/89, ETA: 0:00:12.054388, readabilityCNN loss: 0.048589
+Epoch: 3/5, Batch: 43/89, ETA: 0:00:12.056648, readabilityCNN loss: 0.054682
+Epoch: 3/5, Batch: 44/89, ETA: 0:00:11.933602, readabilityCNN loss: 0.056969
+Epoch: 3/5, Batch: 45/89, ETA: 0:00:11.978614, readabilityCNN loss: 0.043413
+Epoch: 3/5, Batch: 46/89, ETA: 0:00:12.354449, readabilityCNN loss: 0.053472
+Epoch: 3/5, Batch: 47/89, ETA: 0:00:11.645693, readabilityCNN loss: 0.044177
+Epoch: 3/5, Batch: 48/89, ETA: 0:00:54.670987, readabilityCNN loss: 0.044643
+Epoch: 3/5, Batch: 49/89, ETA: 0:00:11.687771, readabilityCNN loss: 0.039758
+Epoch: 3/5, Batch: 50/89, ETA: 0:00:11.511902, readabilityCNN loss: 0.033635
+Epoch: 3/5, Batch: 51/89, ETA: 0:00:11.282954, readabilityCNN loss: 0.036801
+Epoch: 3/5, Batch: 52/89, ETA: 0:00:11.366095, readabilityCNN loss: 0.043505
+Epoch: 3/5, Batch: 53/89, ETA: 0:00:10.971189, readabilityCNN loss: 0.048353
+Epoch: 3/5, Batch: 54/89, ETA: 0:00:11.351268, readabilityCNN loss: 0.053060
+Epoch: 3/5, Batch: 55/89, ETA: 0:00:10.972130, readabilityCNN loss: 0.043903
+Epoch: 3/5, Batch: 56/89, ETA: 0:00:11.051020, readabilityCNN loss: 0.053126
+Epoch: 3/5, Batch: 57/89, ETA: 0:00:10.711503, readabilityCNN loss: 0.037438
+Epoch: 3/5, Batch: 58/89, ETA: 0:00:10.845480, readabilityCNN loss: 0.073698
+Epoch: 3/5, Batch: 59/89, ETA: 0:00:10.692144, readabilityCNN loss: 0.057192
+Epoch: 3/5, Batch: 60/89, ETA: 0:00:10.622100, readabilityCNN loss: 0.044073
+Epoch: 3/5, Batch: 61/89, ETA: 0:00:10.476906, readabilityCNN loss: 0.043844
+Epoch: 3/5, Batch: 62/89, ETA: 0:00:10.145807, readabilityCNN loss: 0.046143
+Epoch: 3/5, Batch: 63/89, ETA: 0:00:10.486203, readabilityCNN loss: 0.040667
+Epoch: 3/5, Batch: 64/89, ETA: 0:00:09.849631, readabilityCNN loss: 0.041710
+Epoch: 3/5, Batch: 65/89, ETA: 0:00:10.326546, readabilityCNN loss: 0.044029
+Epoch: 3/5, Batch: 66/89, ETA: 0:00:09.938545, readabilityCNN loss: 0.034161
+Epoch: 3/5, Batch: 67/89, ETA: 0:00:09.861453, readabilityCNN loss: 0.041781
+Epoch: 3/5, Batch: 68/89, ETA: 0:00:09.966447, readabilityCNN loss: 0.043667
+Epoch: 3/5, Batch: 69/89, ETA: 0:00:09.931821, readabilityCNN loss: 0.040041
+Epoch: 3/5, Batch: 70/89, ETA: 0:00:09.583288, readabilityCNN loss: 0.046912
+Epoch: 3/5, Batch: 71/89, ETA: 0:00:09.679864, readabilityCNN loss: 0.040864
+Epoch: 3/5, Batch: 72/89, ETA: 0:00:09.405921, readabilityCNN loss: 0.041425
+Epoch: 3/5, Batch: 73/89, ETA: 0:00:44.359660, readabilityCNN loss: 0.040056
+Epoch: 3/5, Batch: 74/89, ETA: 0:00:09.387985, readabilityCNN loss: 0.043451
+Epoch: 3/5, Batch: 75/89, ETA: 0:00:09.327086, readabilityCNN loss: 0.041167
+Epoch: 3/5, Batch: 76/89, ETA: 0:00:09.096627, readabilityCNN loss: 0.045067
+Epoch: 3/5, Batch: 77/89, ETA: 0:00:09.272785, readabilityCNN loss: 0.036431
+Epoch: 3/5, Batch: 78/89, ETA: 0:00:08.980989, readabilityCNN loss: 0.044892
+Epoch: 3/5, Batch: 79/89, ETA: 0:00:08.911242, readabilityCNN loss: 0.045346
+Epoch: 3/5, Batch: 80/89, ETA: 0:00:08.675619, readabilityCNN loss: 0.035476
+Epoch: 3/5, Batch: 81/89, ETA: 0:00:08.745116, readabilityCNN loss: 0.053018
+Epoch: 3/5, Batch: 82/89, ETA: 0:00:08.611015, readabilityCNN loss: 0.052905
+Epoch: 3/5, Batch: 83/89, ETA: 0:00:08.564171, readabilityCNN loss: 0.038514
+Epoch: 3/5, Batch: 84/89, ETA: 0:00:08.434107, readabilityCNN loss: 0.040032
+Epoch: 3/5, Batch: 85/89, ETA: 0:00:08.332143, readabilityCNN loss: 0.037792
+Epoch: 3/5, Batch: 86/89, ETA: 0:00:08.286485, readabilityCNN loss: 0.051352
+Epoch: 3/5, Batch: 87/89, ETA: 0:00:08.160702, readabilityCNN loss: 0.051435
+Epoch: 3/5, Batch: 88/89, ETA: 0:00:08.101430, readabilityCNN loss: 0.037811
+Epoch: 4/5, Batch: 0/89, ETA: 0:00:08.853224, readabilityCNN loss: 0.030539
+Epoch: 4/5, Batch: 1/89, ETA: 0:00:08.045919, readabilityCNN loss: 0.033206
+Epoch: 4/5, Batch: 2/89, ETA: 0:00:07.552583, readabilityCNN loss: 0.027505
+Epoch: 4/5, Batch: 3/89, ETA: 0:00:07.773578, readabilityCNN loss: 0.024316
+Epoch: 4/5, Batch: 4/89, ETA: 0:00:07.599430, readabilityCNN loss: 0.035627
+Epoch: 4/5, Batch: 5/89, ETA: 0:00:07.594019, readabilityCNN loss: 0.035648
+Epoch: 4/5, Batch: 6/89, ETA: 0:00:07.375719, readabilityCNN loss: 0.033332
+Epoch: 4/5, Batch: 7/89, ETA: 0:00:07.425213, readabilityCNN loss: 0.027758
+Epoch: 4/5, Batch: 8/89, ETA: 0:00:07.249882, readabilityCNN loss: 0.049016
+Epoch: 4/5, Batch: 9/89, ETA: 0:00:33.676586, readabilityCNN loss: 0.035893
+Epoch: 4/5, Batch: 10/89, ETA: 0:00:07.107865, readabilityCNN loss: 0.039346
+Epoch: 4/5, Batch: 11/89, ETA: 0:00:06.921041, readabilityCNN loss: 0.032708
+Epoch: 4/5, Batch: 12/89, ETA: 0:00:06.963277, readabilityCNN loss: 0.035464
+Epoch: 4/5, Batch: 13/89, ETA: 0:00:06.749413, readabilityCNN loss: 0.029442
+Epoch: 4/5, Batch: 14/89, ETA: 0:00:06.683153, readabilityCNN loss: 0.029895
+Epoch: 4/5, Batch: 15/89, ETA: 0:00:06.691169, readabilityCNN loss: 0.035747
+Epoch: 4/5, Batch: 16/89, ETA: 0:00:06.358302, readabilityCNN loss: 0.037256
+Epoch: 4/5, Batch: 17/89, ETA: 0:00:06.606491, readabilityCNN loss: 0.040997
+Epoch: 4/5, Batch: 18/89, ETA: 0:00:06.192871, readabilityCNN loss: 0.043554
+Epoch: 4/5, Batch: 19/89, ETA: 0:00:06.337395, readabilityCNN loss: 0.046534
+Epoch: 4/5, Batch: 20/89, ETA: 0:00:06.095348, readabilityCNN loss: 0.060494
+Epoch: 4/5, Batch: 21/89, ETA: 0:00:06.096210, readabilityCNN loss: 0.027378
+Epoch: 4/5, Batch: 22/89, ETA: 0:00:05.979197, readabilityCNN loss: 0.032729
+Epoch: 4/5, Batch: 23/89, ETA: 0:00:05.720404, readabilityCNN loss: 0.039694
+Epoch: 4/5, Batch: 24/89, ETA: 0:00:06.366237, readabilityCNN loss: 0.041265
+Epoch: 4/5, Batch: 25/89, ETA: 0:00:05.582214, readabilityCNN loss: 0.039314
+Epoch: 4/5, Batch: 26/89, ETA: 0:00:05.642132, readabilityCNN loss: 0.040665
+Epoch: 4/5, Batch: 27/89, ETA: 0:00:05.556181, readabilityCNN loss: 0.054963
+Epoch: 4/5, Batch: 28/89, ETA: 0:00:05.510559, readabilityCNN loss: 0.037429
+Epoch: 4/5, Batch: 29/89, ETA: 0:00:05.466642, readabilityCNN loss: 0.059005
+Epoch: 4/5, Batch: 30/89, ETA: 0:00:05.250071, readabilityCNN loss: 0.052648
+Epoch: 4/5, Batch: 31/89, ETA: 0:00:05.195339, readabilityCNN loss: 0.040639
+Epoch: 4/5, Batch: 32/89, ETA: 0:00:05.031686, readabilityCNN loss: 0.034989
+Epoch: 4/5, Batch: 33/89, ETA: 0:00:04.983852, readabilityCNN loss: 0.035389
+Epoch: 4/5, Batch: 34/89, ETA: 0:00:24.964623, readabilityCNN loss: 0.043205
+Epoch: 4/5, Batch: 35/89, ETA: 0:00:04.717358, readabilityCNN loss: 0.027802
+Epoch: 4/5, Batch: 36/89, ETA: 0:00:04.959563, readabilityCNN loss: 0.035795
+Epoch: 4/5, Batch: 37/89, ETA: 0:00:04.591413, readabilityCNN loss: 0.036504
+Epoch: 4/5, Batch: 38/89, ETA: 0:00:04.664763, readabilityCNN loss: 0.039959
+Epoch: 4/5, Batch: 39/89, ETA: 0:00:04.429817, readabilityCNN loss: 0.047971
+Epoch: 4/5, Batch: 40/89, ETA: 0:00:04.423162, readabilityCNN loss: 0.043135
+Epoch: 4/5, Batch: 41/89, ETA: 0:00:04.237370, readabilityCNN loss: 0.033841
+Epoch: 4/5, Batch: 42/89, ETA: 0:00:04.319910, readabilityCNN loss: 0.027471
+Epoch: 4/5, Batch: 43/89, ETA: 0:00:04.068204, readabilityCNN loss: 0.027174
+Epoch: 4/5, Batch: 44/89, ETA: 0:00:04.075016, readabilityCNN loss: 0.034451
+Epoch: 4/5, Batch: 45/89, ETA: 0:00:03.874489, readabilityCNN loss: 0.050523
+Epoch: 4/5, Batch: 46/89, ETA: 0:00:03.927141, readabilityCNN loss: 0.063028
+Epoch: 4/5, Batch: 47/89, ETA: 0:00:03.779626, readabilityCNN loss: 0.034159
+Epoch: 4/5, Batch: 48/89, ETA: 0:00:03.745050, readabilityCNN loss: 0.034771
+Epoch: 4/5, Batch: 49/89, ETA: 0:00:03.515711, readabilityCNN loss: 0.045499
+Epoch: 4/5, Batch: 50/89, ETA: 0:00:03.548436, readabilityCNN loss: 0.043671
+Epoch: 4/5, Batch: 51/89, ETA: 0:00:03.380704, readabilityCNN loss: 0.050310
+Epoch: 4/5, Batch: 52/89, ETA: 0:00:03.306099, readabilityCNN loss: 0.025328
+Epoch: 4/5, Batch: 53/89, ETA: 0:00:03.242151, readabilityCNN loss: 0.034409
+Epoch: 4/5, Batch: 54/89, ETA: 0:00:03.161271, readabilityCNN loss: 0.035583
+Epoch: 4/5, Batch: 55/89, ETA: 0:00:03.060402, readabilityCNN loss: 0.049665
+Epoch: 4/5, Batch: 56/89, ETA: 0:00:02.971232, readabilityCNN loss: 0.042826
+Epoch: 4/5, Batch: 57/89, ETA: 0:00:02.845558, readabilityCNN loss: 0.040398
+Epoch: 4/5, Batch: 58/89, ETA: 0:00:02.822798, readabilityCNN loss: 0.055389
+Epoch: 4/5, Batch: 59/89, ETA: 0:00:12.627561, readabilityCNN loss: 0.036410
+Epoch: 4/5, Batch: 60/89, ETA: 0:00:02.557263, readabilityCNN loss: 0.040167
+Epoch: 4/5, Batch: 61/89, ETA: 0:00:02.563156, readabilityCNN loss: 0.038769
+Epoch: 4/5, Batch: 62/89, ETA: 0:00:02.390074, readabilityCNN loss: 0.036176
+Epoch: 4/5, Batch: 63/89, ETA: 0:00:02.333786, readabilityCNN loss: 0.045852
+Epoch: 4/5, Batch: 64/89, ETA: 0:00:02.239048, readabilityCNN loss: 0.050375
+Epoch: 4/5, Batch: 65/89, ETA: 0:00:02.088747, readabilityCNN loss: 0.038141
+Epoch: 4/5, Batch: 66/89, ETA: 0:00:02.095283, readabilityCNN loss: 0.030140
+Epoch: 4/5, Batch: 67/89, ETA: 0:00:01.925070, readabilityCNN loss: 0.040093
+Epoch: 4/5, Batch: 68/89, ETA: 0:00:01.897849, readabilityCNN loss: 0.034141
+Epoch: 4/5, Batch: 69/89, ETA: 0:00:01.772022, readabilityCNN loss: 0.038668
+Epoch: 4/5, Batch: 70/89, ETA: 0:00:01.726288, readabilityCNN loss: 0.033717
+Epoch: 4/5, Batch: 71/89, ETA: 0:00:01.611372, readabilityCNN loss: 0.030486
+Epoch: 4/5, Batch: 72/89, ETA: 0:00:01.578758, readabilityCNN loss: 0.042694
+Epoch: 4/5, Batch: 73/89, ETA: 0:00:01.408825, readabilityCNN loss: 0.049507
+Epoch: 4/5, Batch: 74/89, ETA: 0:00:01.366303, readabilityCNN loss: 0.042219
+Epoch: 4/5, Batch: 75/89, ETA: 0:00:01.245766, readabilityCNN loss: 0.058399
+Epoch: 4/5, Batch: 76/89, ETA: 0:00:01.168369, readabilityCNN loss: 0.035712
+Epoch: 4/5, Batch: 77/89, ETA: 0:00:01.079967, readabilityCNN loss: 0.057709
+Epoch: 4/5, Batch: 78/89, ETA: 0:00:01.005124, readabilityCNN loss: 0.043861
+Epoch: 4/5, Batch: 79/89, ETA: 0:00:00.906038, readabilityCNN loss: 0.032334
+Epoch: 4/5, Batch: 80/89, ETA: 0:00:00.795258, readabilityCNN loss: 0.043066
+Epoch: 4/5, Batch: 81/89, ETA: 0:00:00.712450, readabilityCNN loss: 0.068729
+Epoch: 4/5, Batch: 82/89, ETA: 0:00:00.626743, readabilityCNN loss: 0.040563
+Epoch: 4/5, Batch: 83/89, ETA: 0:00:00.536445, readabilityCNN loss: 0.042202
+Epoch: 4/5, Batch: 84/89, ETA: 0:00:02.342787, readabilityCNN loss: 0.041804
+Epoch: 4/5, Batch: 85/89, ETA: 0:00:00.350840, readabilityCNN loss: 0.047773
+Epoch: 4/5, Batch: 86/89, ETA: 0:00:00.259903, readabilityCNN loss: 0.044362
+Epoch: 4/5, Batch: 87/89, ETA: 0:00:00.177915, readabilityCNN loss: 0.029238
+Epoch: 4/5, Batch: 88/89, ETA: 0:00:00.085796, readabilityCNN loss: 0.050206
+Epoch: 5/5, Batch: 0/89, ETA: 0:00:00, readabilityCNN loss: 0.041815
+Epoch: 5/5, Batch: 1/89, ETA: -1 day, 23:59:59.910422, readabilityCNN loss: 0.058803
+Epoch: 5/5, Batch: 2/89, ETA: -1 day, 23:59:59.823462, readabilityCNN loss: 0.058681
+Epoch: 5/5, Batch: 3/89, ETA: -1 day, 23:59:59.732976, readabilityCNN loss: 0.028756
+Epoch: 5/5, Batch: 4/89, ETA: -1 day, 23:59:59.647928, readabilityCNN loss: 0.031422
+Epoch: 5/5, Batch: 5/89, ETA: -1 day, 23:59:59.564506, readabilityCNN loss: 0.042981
+Epoch: 5/5, Batch: 6/89, ETA: -1 day, 23:59:59.461792, readabilityCNN loss: 0.031908
+Epoch: 5/5, Batch: 7/89, ETA: -1 day, 23:59:59.370528, readabilityCNN loss: 0.042380
+Epoch: 5/5, Batch: 8/89, ETA: -1 day, 23:59:59.291759, readabilityCNN loss: 0.029797
+Epoch: 5/5, Batch: 9/89, ETA: -1 day, 23:59:59.201122, readabilityCNN loss: 0.025389
+Epoch: 5/5, Batch: 10/89, ETA: -1 day, 23:59:59.129574, readabilityCNN loss: 0.034093
+Epoch: 5/5, Batch: 11/89, ETA: -1 day, 23:59:59.017323, readabilityCNN loss: 0.034259
+Epoch: 5/5, Batch: 12/89, ETA: -1 day, 23:59:58.944314, readabilityCNN loss: 0.027873
+Epoch: 5/5, Batch: 13/89, ETA: -1 day, 23:59:58.876217, readabilityCNN loss: 0.043464
+Epoch: 5/5, Batch: 14/89, ETA: -1 day, 23:59:58.757912, readabilityCNN loss: 0.032461
+Epoch: 5/5, Batch: 15/89, ETA: -1 day, 23:59:58.689516, readabilityCNN loss: 0.038931
+Epoch: 5/5, Batch: 16/89, ETA: -1 day, 23:59:58.612019, readabilityCNN loss: 0.052029
+Epoch: 5/5, Batch: 17/89, ETA: -1 day, 23:59:58.541401, readabilityCNN loss: 0.034006
+Epoch: 5/5, Batch: 18/89, ETA: -1 day, 23:59:58.397683, readabilityCNN loss: 0.044882
+Epoch: 5/5, Batch: 19/89, ETA: -1 day, 23:59:58.331174, readabilityCNN loss: 0.040256
+Epoch: 5/5, Batch: 20/89, ETA: -1 day, 23:59:50.691557, readabilityCNN loss: 0.026576
+Epoch: 5/5, Batch: 21/89, ETA: -1 day, 23:59:58.136438, readabilityCNN loss: 0.037267
+Epoch: 5/5, Batch: 22/89, ETA: -1 day, 23:59:58.051709, readabilityCNN loss: 0.055299
+Epoch: 5/5, Batch: 23/89, ETA: -1 day, 23:59:57.978285, readabilityCNN loss: 0.036185
+Epoch: 5/5, Batch: 24/89, ETA: -1 day, 23:59:57.909719, readabilityCNN loss: 0.028664
+Epoch: 5/5, Batch: 25/89, ETA: -1 day, 23:59:57.837549, readabilityCNN loss: 0.036895
+Epoch: 5/5, Batch: 26/89, ETA: -1 day, 23:59:57.696824, readabilityCNN loss: 0.034492
+Epoch: 5/5, Batch: 27/89, ETA: -1 day, 23:59:57.622460, readabilityCNN loss: 0.025805
+Epoch: 5/5, Batch: 28/89, ETA: -1 day, 23:59:57.606174, readabilityCNN loss: 0.036102
+Epoch: 5/5, Batch: 29/89, ETA: -1 day, 23:59:57.447487, readabilityCNN loss: 0.032943
+Epoch: 5/5, Batch: 30/89, ETA: -1 day, 23:59:57.329450, readabilityCNN loss: 0.032232
+Epoch: 5/5, Batch: 31/89, ETA: -1 day, 23:59:57.310357, readabilityCNN loss: 0.040343
+Epoch: 5/5, Batch: 32/89, ETA: -1 day, 23:59:57.160698, readabilityCNN loss: 0.040615
+Epoch: 5/5, Batch: 33/89, ETA: -1 day, 23:59:57.075495, readabilityCNN loss: 0.044497
+Epoch: 5/5, Batch: 34/89, ETA: -1 day, 23:59:57.048813, readabilityCNN loss: 0.045494
+Epoch: 5/5, Batch: 35/89, ETA: -1 day, 23:59:56.904143, readabilityCNN loss: 0.029539
+Epoch: 5/5, Batch: 36/89, ETA: -1 day, 23:59:56.792095, readabilityCNN loss: 0.038023
+Epoch: 5/5, Batch: 37/89, ETA: -1 day, 23:59:56.815505, readabilityCNN loss: 0.030977
+Epoch: 5/5, Batch: 38/89, ETA: -1 day, 23:59:56.654150, readabilityCNN loss: 0.041657
+Epoch: 5/5, Batch: 39/89, ETA: -1 day, 23:59:56.543497, readabilityCNN loss: 0.035512
+Epoch: 5/5, Batch: 40/89, ETA: -1 day, 23:59:56.521034, readabilityCNN loss: 0.031894
+Epoch: 5/5, Batch: 41/89, ETA: -1 day, 23:59:56.495272, readabilityCNN loss: 0.043833
+Epoch: 5/5, Batch: 42/89, ETA: -1 day, 23:59:56.287195, readabilityCNN loss: 0.029073
+Epoch: 5/5, Batch: 43/89, ETA: -1 day, 23:59:56.287290, readabilityCNN loss: 0.042104
+Epoch: 5/5, Batch: 44/89, ETA: -1 day, 23:59:56.166445, readabilityCNN loss: 0.038547
+Epoch: 5/5, Batch: 45/89, ETA: -1 day, 23:59:37.510729, readabilityCNN loss: 0.042315
+Epoch: 5/5, Batch: 46/89, ETA: -1 day, 23:59:56.048717, readabilityCNN loss: 0.037888
+Epoch: 5/5, Batch: 47/89, ETA: -1 day, 23:59:55.878139, readabilityCNN loss: 0.042305
+Epoch: 5/5, Batch: 48/89, ETA: -1 day, 23:59:55.770081, readabilityCNN loss: 0.038146
+Epoch: 5/5, Batch: 49/89, ETA: -1 day, 23:59:55.663616, readabilityCNN loss: 0.030191
+Epoch: 5/5, Batch: 50/89, ETA: -1 day, 23:59:55.654190, readabilityCNN loss: 0.030300
+Epoch: 5/5, Batch: 51/89, ETA: -1 day, 23:59:55.493539, readabilityCNN loss: 0.027163
+Epoch: 5/5, Batch: 52/89, ETA: -1 day, 23:59:55.376005, readabilityCNN loss: 0.046297
+Epoch: 5/5, Batch: 53/89, ETA: -1 day, 23:59:55.379099, readabilityCNN loss: 0.041010
+Epoch: 5/5, Batch: 54/89, ETA: -1 day, 23:59:55.157810, readabilityCNN loss: 0.043758
+Epoch: 5/5, Batch: 55/89, ETA: -1 day, 23:59:55.138898, readabilityCNN loss: 0.030858
+Epoch: 5/5, Batch: 56/89, ETA: -1 day, 23:59:55.125843, readabilityCNN loss: 0.028675
+Epoch: 5/5, Batch: 57/89, ETA: -1 day, 23:59:54.923576, readabilityCNN loss: 0.034967
+Epoch: 5/5, Batch: 58/89, ETA: -1 day, 23:59:54.895139, readabilityCNN loss: 0.041910
+Epoch: 5/5, Batch: 59/89, ETA: -1 day, 23:59:54.908447, readabilityCNN loss: 0.047038
+Epoch: 5/5, Batch: 60/89, ETA: -1 day, 23:59:54.686594, readabilityCNN loss: 0.041630
+Epoch: 5/5, Batch: 61/89, ETA: -1 day, 23:59:54.566958, readabilityCNN loss: 0.052204
+Epoch: 5/5, Batch: 62/89, ETA: -1 day, 23:59:54.700478, readabilityCNN loss: 0.035696
+Epoch: 5/5, Batch: 63/89, ETA: -1 day, 23:59:54.407450, readabilityCNN loss: 0.032971
+Epoch: 5/5, Batch: 64/89, ETA: -1 day, 23:59:54.328384, readabilityCNN loss: 0.049801
+Epoch: 5/5, Batch: 65/89, ETA: -1 day, 23:59:54.373460, readabilityCNN loss: 0.032321
+Epoch: 5/5, Batch: 66/89, ETA: -1 day, 23:59:54.090958, readabilityCNN loss: 0.030008
+Epoch: 5/5, Batch: 67/89, ETA: -1 day, 23:59:54.021442, readabilityCNN loss: 0.019545
+Epoch: 5/5, Batch: 68/89, ETA: -1 day, 23:59:54.174116, readabilityCNN loss: 0.029321
+Epoch: 5/5, Batch: 69/89, ETA: -1 day, 23:59:53.867868, readabilityCNN loss: 0.035076
+Epoch: 5/5, Batch: 70/89, ETA: -1 day, 23:59:27.250051, readabilityCNN loss: 0.038226
+Epoch: 5/5, Batch: 71/89, ETA: -1 day, 23:59:53.633366, readabilityCNN loss: 0.031654
+Epoch: 5/5, Batch: 72/89, ETA: -1 day, 23:59:53.818800, readabilityCNN loss: 0.032773
+Epoch: 5/5, Batch: 73/89, ETA: -1 day, 23:59:53.497901, readabilityCNN loss: 0.025841
+Epoch: 5/5, Batch: 74/89, ETA: -1 day, 23:59:53.486355, readabilityCNN loss: 0.040491
+Epoch: 5/5, Batch: 75/89, ETA: -1 day, 23:59:53.505388, readabilityCNN loss: 0.042107
+Epoch: 5/5, Batch: 76/89, ETA: -1 day, 23:59:53.268272, readabilityCNN loss: 0.045693
+Epoch: 5/5, Batch: 77/89, ETA: -1 day, 23:59:53.151205, readabilityCNN loss: 0.029933
+Epoch: 5/5, Batch: 78/89, ETA: -1 day, 23:59:53.252169, readabilityCNN loss: 0.046044
+Epoch: 5/5, Batch: 79/89, ETA: -1 day, 23:59:52.888425, readabilityCNN loss: 0.033112
+Epoch: 5/5, Batch: 80/89, ETA: -1 day, 23:59:52.938671, readabilityCNN loss: 0.047136
+Epoch: 5/5, Batch: 81/89, ETA: -1 day, 23:59:53.011640, readabilityCNN loss: 0.043702
+Epoch: 5/5, Batch: 82/89, ETA: -1 day, 23:59:52.679088, readabilityCNN loss: 0.036515
+Epoch: 5/5, Batch: 83/89, ETA: -1 day, 23:59:52.681272, readabilityCNN loss: 0.039590
+Epoch: 5/5, Batch: 84/89, ETA: -1 day, 23:59:52.647869, readabilityCNN loss: 0.046215
+Epoch: 5/5, Batch: 85/89, ETA: -1 day, 23:59:52.444323, readabilityCNN loss: 0.041634
+Epoch: 5/5, Batch: 86/89, ETA: -1 day, 23:59:52.405955, readabilityCNN loss: 0.033825
+Epoch: 5/5, Batch: 87/89, ETA: -1 day, 23:59:52.501658, readabilityCNN loss: 0.035669
+Epoch: 5/5, Batch: 88/89, ETA: -1 day, 23:59:52.062698, readabilityCNN loss: 0.029523

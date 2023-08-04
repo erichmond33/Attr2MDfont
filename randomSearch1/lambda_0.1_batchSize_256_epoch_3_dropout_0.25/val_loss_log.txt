@@ -1,0 +1,11 @@
+Epoch: 1/3, Batch: 0/89, MESLoss:  0.124522
+Epoch: 1/3, Batch: 25/89, MESLoss:  0.069721
+Epoch: 1/3, Batch: 50/89, MESLoss:  0.096735
+Epoch: 1/3, Batch: 75/89, MESLoss:  0.054052
+Epoch: 2/3, Batch: 11/89, MESLoss:  0.110846
+Epoch: 2/3, Batch: 36/89, MESLoss:  0.068111
+Epoch: 2/3, Batch: 61/89, MESLoss:  0.056639
+Epoch: 2/3, Batch: 86/89, MESLoss:  0.107238
+Epoch: 3/3, Batch: 22/89, MESLoss:  0.116478
+Epoch: 3/3, Batch: 47/89, MESLoss:  0.046945
+Epoch: 3/3, Batch: 72/89, MESLoss:  0.058168

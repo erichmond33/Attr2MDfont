@@ -1,0 +1,13 @@
+Epoch: 1/51, Batch: 0/44, MESLoss:  0.332648
+Epoch: 1/51, Batch: 25/44, MESLoss:  0.073535
+Epoch: 2/51, Batch: 6/44, MESLoss:  0.056839
+Epoch: 2/51, Batch: 31/44, MESLoss:  0.053066
+Epoch: 3/51, Batch: 12/44, MESLoss:  0.052912
+Epoch: 3/51, Batch: 37/44, MESLoss:  0.059031
+Epoch: 4/51, Batch: 18/44, MESLoss:  0.058735
+Epoch: 4/51, Batch: 43/44, MESLoss:  0.051859
+Epoch: 5/51, Batch: 24/44, MESLoss:  0.050531
+Epoch: 6/51, Batch: 5/44, MESLoss:  0.054855
+Epoch: 6/51, Batch: 30/44, MESLoss:  0.059850
+Epoch: 7/51, Batch: 11/44, MESLoss:  0.055511
+Epoch: 7/51, Batch: 36/44, MESLoss:  0.060671

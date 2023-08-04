@@ -1,0 +1,65 @@
+# Hyperparameters
+lambdas = [0.1, 0.5, 1, 5, 10, 20]      # Learning rate
+batchSizes = [32, 64, 128, 256]
+epochs = [3, 5, 10]
+dropout = [0.1, 0.25, 0.5]
+
+
+lambda_0.5_batchSize_32_epoch_5_dropout_0.5
+Epoch: 1/5, readabilityCNN Loss:  0.073890
+Epoch: 2/5, readabilityCNN Loss:  0.019211
+Epoch: 3/5, readabilityCNN Loss:  0.082981
+Epoch: 4/5, readabilityCNN Loss:  0.005746
+Epoch: 5/5, readabilityCNN Loss:  0.016788
+
+lambda_10_batchSize_128_epoch_10_dropout_0.5
+Epoch: 1/10, readabilityCNN Loss:  0.117244
+Epoch: 2/10, readabilityCNN Loss:  0.024077
+Epoch: 3/10, readabilityCNN Loss:  0.186137
+Epoch: 4/10, readabilityCNN Loss:  0.069067
+Epoch: 5/10, readabilityCNN Loss:  0.032682
+Epoch: 6/10, readabilityCNN Loss:  0.025624
+Epoch: 7/10, readabilityCNN Loss:  0.018091
+Epoch: 8/10, readabilityCNN Loss:  0.071897
+Epoch: 9/10, readabilityCNN Loss:  0.008246
+Epoch: 10/10, readabilityCNN Loss:  0.004115
+
+lambda_20_batchSize_64_epoch_3_dropout_0.5
+Epoch: 1/3, readabilityCNN Loss:  0.046470
+Epoch: 2/3, readabilityCNN Loss:  0.050812
+Epoch: 3/3, readabilityCNN Loss:  0.010306
+
+lambda_0.1_batchSize_32_epoch_3_dropout_0.5
+Epoch: 1/3, readabilityCNN Loss:  0.047863
+Epoch: 2/3, readabilityCNN Loss:  0.010559
+Epoch: 3/3, readabilityCNN Loss:  0.024206
+
+lambda_0.1_batchSize_32_epoch_10_dropout_0.5
+Epoch: 1/10, readabilityCNN Loss:  0.139638
+Epoch: 2/10, readabilityCNN Loss:  0.058465
+Epoch: 3/10, readabilityCNN Loss:  0.049672
+Epoch: 4/10, readabilityCNN Loss:  0.041656
+Epoch: 5/10, readabilityCNN Loss:  0.035230
+Epoch: 6/10, readabilityCNN Loss:  0.009965
+Epoch: 7/10, readabilityCNN Loss:  0.028435
+Epoch: 8/10, readabilityCNN Loss:  0.017011
+Epoch: 9/10, readabilityCNN Loss:  0.032096
+Epoch: 10/10, readabilityCNN Loss:  0.096154
+
+lambda_0.1_batchSize_64_epoch_10_dropout_0.5
+Epoch: 1/10, readabilityCNN Loss:  0.132554
+Epoch: 2/10, readabilityCNN Loss:  0.048971
+Epoch: 3/10, readabilityCNN Loss:  0.012084
+Epoch: 4/10, readabilityCNN Loss:  0.021907
+Epoch: 5/10, readabilityCNN Loss:  0.022079
+Epoch: 6/10, readabilityCNN Loss:  0.098466
+Epoch: 7/10, readabilityCNN Loss:  0.014835
+Epoch: 8/10, readabilityCNN Loss:  0.016153
+Epoch: 9/10, readabilityCNN Loss:  0.015979
+Epoch: 10/10, readabilityCNN Loss:  0.020743
+
+lambda_0.1_batchSize_128_epoch_3_dropout_0.5
+Epoch: 1/3, readabilityCNN Loss:  0.056895
+Epoch: 2/3, readabilityCNN Loss:  0.064097
+Epoch: 3/3, readabilityCNN Loss:  0.026086
+

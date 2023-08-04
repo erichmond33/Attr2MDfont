@@ -1,0 +1,10 @@
+Epoch: 1/10, readabilityCNN Loss:  0.191579
+Epoch: 2/10, readabilityCNN Loss:  0.132290
+Epoch: 3/10, readabilityCNN Loss:  0.199124
+Epoch: 4/10, readabilityCNN Loss:  0.277494
+Epoch: 5/10, readabilityCNN Loss:  0.117484
+Epoch: 6/10, readabilityCNN Loss:  0.105978
+Epoch: 7/10, readabilityCNN Loss:  0.151192
+Epoch: 8/10, readabilityCNN Loss:  0.170434
+Epoch: 9/10, readabilityCNN Loss:  0.133001
+Epoch: 10/10, readabilityCNN Loss:  0.124509

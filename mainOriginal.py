@@ -65,22 +65,22 @@ def train(opts):
     attribute_embed = nn.Embedding(opts.attr_channel, opts.attr_embed)
     # unsupervise font num + 1 dummy id (for supervise)
     attr_unsuper_tolearn = nn.Embedding(opts.unsuper_num+1, opts.attr_channel)  # attribute intensity
-    readabilityCNN = ReadabilityCNN()
+    readability_CNN = ReadabilityCNN()
 
     if opts.multi_gpu:
         generator = nn.DataParallel(generator)
         discriminator = nn.DataParallel(discriminator)
         attribute_embed = nn.DataParallel(attribute_embed)
         attr_unsuper_tolearn = nn.DataParallel(attr_unsuper_tolearn)
-        readabilityCNN = nn.DataParallel(readabilityCNN)
+        readability_CNN = nn.DataParallel(readability_CNN)
     generator = generator.to(device)
     discriminator = discriminator.to(device)
     attribute_embed = attribute_embed.to(device)
     attr_unsuper_tolearn = attr_unsuper_tolearn.to(device)
-    readabilityCNN = readabilityCNN.to(device)
+    readability_CNN = readability_CNN.to(device)
 
-    # Load in the pretrained readabilityCNN model
-    readabilityCNN.load_state_dict(torch.load("readabilityCNN_1.pth"))
+    # Load in the pretrained readability_CNN model
+    readability_CNN.load_state_dict(torch.load("readability_CNN_3.pth"))
 
     # Discriminator output patch shape
     patch = (1, opts.img_size // 2**4, opts.img_size // 2**4)
@@ -130,7 +130,7 @@ def train(opts):
 
             valid = torch.ones((img_A.size(0), *patch)).to(device)
             fake = torch.zeros((img_A.size(0), *patch)).to(device)
-            perfectReadabilityScore = torch.ones((train_dataloader.batch_size, 1)).to(device)
+            perfect_readability_score = torch.ones((train_dataloader.batch_size, 1)).to(device)
 
             # Construct attribute
             attr_raw_A = attribute_embed(attrid)
@@ -183,11 +183,11 @@ def train(opts):
                     cx = criterion_cx(vgg_img_B[l], vgg_fake_B[l])
                     loss_CX += cx * opts.lambda_cx
 
-            # readabilityCNN
-            predictedReadabilityScore = readabilityCNN(fake_B)
-            readabilityLoss = MSELoss(predictedReadabilityScore, perfectReadabilityScore)
+            # readability_CNN
+            predicted_readability_score = readability_CNN(fake_B)
+            readability_loss = MSELoss(predicted_readability_score, perfect_readability_score)
 
-            loss_G = loss_GAN + loss_pixel + loss_char_A + loss_CX + loss_attr + readabilityLoss
+            loss_G = loss_GAN + loss_pixel + loss_char_A + loss_CX + loss_attr + readability_loss
 
             optimizer_G.zero_grad()
             loss_G.backward(retain_graph=True)
@@ -228,7 +228,7 @@ def train(opts):
                 f"loss_char_A: {loss_char_A.item():.6f}, "
                 f"loss_CX: {loss_CX.item():.6f}, "
                 f"loss_attr: {loss_attr.item(): .6f}, "
-                f"readabilityLoss: {readabilityLoss.item(): .6f}"
+                f"readability_loss: {readability_loss.item(): .6f}"
             )
 
             print(message)

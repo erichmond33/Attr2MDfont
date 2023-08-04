@@ -91,12 +91,12 @@ class ImageAttr(data.Dataset):
                 else:
                     attr_value.append(eval(val) / 100.0)
 
-            filenameReadabilityScore = self.font2readability[target_font]
+            readability_score_filename = self.font2readability[target_font]
 
             if i < train_size:
-                self.super_train_dataset.append([filename, char_class, font_class, attr_value, filenameReadabilityScore])
+                self.super_train_dataset.append([filename, char_class, font_class, attr_value, readability_score_filename])
             elif i < train_size + val_size:
-                self.super_test_dataset.append([filename, char_class, font_class, attr_value, filenameReadabilityScore])
+                self.super_test_dataset.append([filename, char_class, font_class, attr_value, readability_score_filename])
 
         print('Finished preprocessing the Image Attribute (Explo) dataset...')
 
@@ -105,15 +105,15 @@ class ImageAttr(data.Dataset):
 
         if self.mode == 'train':
             if index < len(self.super_train_dataset):
-                filename_A, charclass_A, fontclass_A, attr_A, readabilityScore = self.super_train_dataset[index]
+                filename_A, charclass_A, fontclass_A, attr_A, readability_score = self.super_train_dataset[index]
         else:
-            filename_A, charclass_A, fontclass_A, attr_A, readabilityScore = self.super_test_dataset[index]
+            filename_A, charclass_A, fontclass_A, attr_A, readability_score = self.super_test_dataset[index]
 
         image_A = Image.open(os.path.join(self.image_dir, filename_A)).convert('RGB')
 
         return {"img_A": self.transform(image_A), "charclass_A": torch.LongTensor([charclass_A]),
                 "fontclass_A": torch.LongTensor([fontclass_A]), "attr_A": torch.FloatTensor(attr_A),
-                "filename_A" : filename_A, "readabilityScore" : readabilityScore}
+                "filename_A" : filename_A, "readability_score" : readability_score}
 
     def __len__(self):
         """Return the number of images."""
